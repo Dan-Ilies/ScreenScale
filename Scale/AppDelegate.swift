@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         // Check if it's launched from Quick Action
         if let shortcutItem = launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
-            
             isLaunchedFromQuickAction = true
             // Handle the sortcutItem
             _ = handleQuickAction(shortcutItem)
@@ -32,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         return true
     }
 
@@ -59,13 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
-        
         completionHandler(handleQuickAction(shortcutItem))
-        
-    }
-    
-    enum Shortcut: String {
-        case openBlue = "OpenBlue"
     }
     
     func handleQuickAction(_ shortcutItem: UIApplicationShortcutItem) -> Bool {

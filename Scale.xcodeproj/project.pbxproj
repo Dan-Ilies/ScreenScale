@@ -14,6 +14,7 @@
 		22EC73851BE790FF00507F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EC73831BE790FF00507F33 /* LaunchScreen.storyboard */; };
 		22EC73901BE7910000507F33 /* ScaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC738F1BE7910000507F33 /* ScaleTests.swift */; };
 		22EC739B1BE7910000507F33 /* ScaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC739A1BE7910000507F33 /* ScaleUITests.swift */; };
+		37BEECBA22344FF3004542F4 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BEECB922344FF3004542F4 /* Shortcut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		22EC73961BE7910000507F33 /* ScaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EC739A1BE7910000507F33 /* ScaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleUITests.swift; sourceTree = "<group>"; };
 		22EC739C1BE7910000507F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37BEECB922344FF3004542F4 /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		22EC73791BE790FF00507F33 /* Scale */ = {
 			isa = PBXGroup;
 			children = (
+				37BEECB8223448C2004542F4 /* Models */,
 				22EC737A1BE790FF00507F33 /* AppDelegate.swift */,
 				22EC737C1BE790FF00507F33 /* ViewController.swift */,
 				22EC737E1BE790FF00507F33 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				22EC739C1BE7910000507F33 /* Info.plist */,
 			);
 			path = ScaleUITests;
+			sourceTree = "<group>";
+		};
+		37BEECB8223448C2004542F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37BEECB922344FF3004542F4 /* Shortcut.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			files = (
 				22EC737D1BE790FF00507F33 /* ViewController.swift in Sources */,
 				22EC737B1BE790FF00507F33 /* AppDelegate.swift in Sources */,
+				37BEECBA22344FF3004542F4 /* Shortcut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
